@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Implementação de Software de Gerenciamento</title>
+</head>
+<body>
+    <header>
+        <h1><img class="logo_senai_tamanho" src="../img/logo_senai.jpg" alt="" width="200px"></h1>
+        
+        <nav>
+            <!-- Checkbox invisível e Ícone do Sanduíche -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <!-- Lista de links do menu -->
+            <ul class="menu-links">
+                <li><a href="../index.html">Introdução</a></li>
+                <li><a href="./sensores.html">Sensores</a></li>
+                <li><a href="./simulacoes_mti_brasil.html">MTI Brasil</a></li>
+                <li><a href="./simulacoes_lab_digital_pneumatica.html">Pneumática</a></li>
+                <li><a href="./simulacoes_lab_digital_eletropneumatica.html">Eletropneumática</a></li>
+                <li><a href="./conclusao.html">Conclusão</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- CONTEÚDO CENTRALIZADO -->
+    <main>
+        <h1>Simulações - MTI Brasil</h1>
+        
+        <section>
+            <section class="section_diferente">
+                <h2 class="h2_diferente">Exercício 01</h2>
+                <img class="imagem_tres" src="../img/mti_brasil_atividade_01.jpg" alt="" width="980px">
+            </section>
+
+            <section class="section_diferente">
+                <h2 class="h2_diferente">Exercício 01</h2>
+                <video src="../video/mti_brasil_atividade_01.mp4" type="video/mp4" controls width="980px"></video>
+            </section>
+
+            <section class="section_diferente">
+                <h3>Circuito:</h3>
+                <p>Trata-se de um circuito de comando direto de um cilindro de simples ação. O sistema é composto por uma fonte de ar comprimido, uma unidade de conservação (FRL), uma válvula direcional 3/2 vias com acionamento por botão e retorno por mola, e um cilindro de simples ação com retorno por mola.</p>
+            </section>
+            
+            <section class="section_diferente">
+                <h3>Simulação:</h3>
+                <p>Ao iniciar a simulação, as linhas de pressão ficam azuis. Quando o usuário clica e segura o botão da válvula 3/2 vias, a válvula muda de posição, permitindo a passagem do ar comprimido que avança o êmbolo do cilindro. Ao soltar o botão, a mola reposiciona a válvula, bloqueando o ar e permitindo que o ar do cilindro escape para a atmosfera, fazendo com que a mola interna do cilindro o faça recuar para a posição inicial.</p>
+            </section>
+        </section>
+
+        <section>
+            <section class="section_diferente">
+                <h2 class="h2_diferente">Exercício 02</h2>
+                <img class="imagem_tres" src="../img/mti_brasil_atividade_02.jpg" alt="" width="980px">
+            </section>
+
+            <section class="section_diferente">
+                <h2 class="h2_diferente">Exercício 02</h2>
+                <video src="../video/mti_brasil_atividade_02.mp4" type="video/mp4" controls width="980px"></video>
+            </section>
+
+            <section class="section_diferente">
+                <h3>Circuito:</h3>
+                <p>Este é um circuito de comando direto de um cilindro de dupla ação. Os componentes principais são uma válvula direcional 5/2 vias (1V1) com acionamento por botão e retorno por mola, e um cilindro de dupla ação (1A1).</p>
+            </section>
+            
+            <section class="section_diferente">
+                <h3>Simulação:</h3>
+                <p>Na posição de repouso, o ar comprimido é direcionado para a câmara dianteira do cilindro, mantendo-o recuado. Ao pressionar o botão da válvula 1V1, ela comuta, direcionando o fluxo de ar para a câmara traseira do cilindro e conectando a câmara dianteira à exaustão, o que provoca o avanço do atuador. Ao soltar o botão, a válvula retorna à sua posição inicial pela ação da mola, invertendo o fluxo de ar e fazendo o cilindro recuar.</p>
+            </section>
+        </section>
+
+        <section>
+            <section class="section_diferente">
+                <h2 class="h2_diferente">Exercício 03</h2>
+                <img class="imagem_tres" src="../img/mti_brasil_atividade_03.jpg" alt="" width="980px">
+            </section>
+
+            <section class="section_diferente">
+                <h2 class="h2_diferente">Exercício 03</h2>
+                <video src="../video/mti_brasil_atividade_03.mp4" type="video/mp4" controls width="980px"></video>
+            </section>
+
+            <section class="section_diferente">
+                <h3>Circuito:</h3>
+                <p>Apresenta um comando indireto de um cilindro de dupla ação (2A1). O circuito utiliza uma válvula 3/2 vias com botão (2S1) para enviar um sinal de pilotagem pneumática para a válvula principal, uma 5/2 vias (2V1) com acionamento pneumático e retorno por mola.</p>
+            </section>
+            
+            <section class="section_diferente">
+                <h3>Simulação:</h3>
+                <p>O ar pressuriza a válvula 2S1 e mantém o cilindro 2A1 recuado através da válvula 2V1. Ao acionar o botão da válvula 2S1, um sinal de ar é enviado para o piloto da válvula 2V1. Isso faz com que a 2V1 comute, direcionando o ar principal para avançar o cilindro 2A1. Quando o botão da 2S1 é solto, o sinal de pilotagem é cortado, a mola da 2V1 a faz retornar à posição original, e o cilindro 2A1 recua.</p>
+            </section>
+        </section>
+
+        <section>
+            <section class="section_diferente">
+                <h2 class="h2_diferente">Exercício 04</h2>
+                <img class="imagem_tres" src="../img/mti_brasil_atividade_04.jpg" alt="" width="980px">
+            </section>
+
+            <section class="section_diferente">
+                <h2 class="h2_diferente">Exercício 04</h2>
+                <video src="../video/mti_brasil_atividade_04.mp4" type="video/mp4" controls width="980px"></video>
+            </section>
+
+            <section class="section_diferente">
+                <h3>Circuito:</h3>
+                <p>Mostra o comando indireto de um cilindro de simples ação. O circuito é composto por uma unidade FRL, uma válvula 3/2 vias manual por botão e retorno por mola, que atua como emissora de sinal para uma segunda válvula 3/2 vias, esta com acionamento por piloto pneumático e retorno por mola, que por sua vez alimenta o cilindro de simples ação.</p>
+            </section>
+            
+            <section class="section_diferente">
+                <h3>Simulação:</h3>
+                <p>O princípio é similar à atividade 03, mas aplicado a um cilindro de simples ação. O acionamento da primeira válvula envia ar para pilotar a segunda válvula. A segunda válvula, ao comutar, libera o fluxo de ar principal para a câmara do cilindro, fazendo-o avançar. Soltando o botão da primeira válvula, despressuriza-se o piloto da segunda, que retorna por mola, cortando o suprimento do cilindro e permitindo que ele recue pela ação de sua própria mola.</p>
+            </section>
+        </section>
+
+        <section>
+            <section class="section_diferente">
+                <h2 class="h2_diferente">Exercício 05 (Separador de caixas)</h2>
+                <img class="imagem_tres" src="../img/mti_brasil_atividade_separador_de_caixas.jpg" alt="" width="980px">
+            </section>
+
+            <section class="section_diferente">
+                <h2 class="h2_diferente">Exercício 05 (Separador de caixas)</h2>
+                <video src="../video/mti_brasil_atividade_separador_de_caixas.mp4" type="video/mp4" controls width="980px"></video>
+            </section>
+
+            <section class="section_diferente">
+                <h3>Circuito:</h3>
+                <p>Trata-se de um sistema com três cilindros de simples ação independentes, simulando um separador de caixas. Há uma válvula direcional 3/2 vias principal logo após a unidade FRL, que serve como uma válvula de abertura/fechamento geral do sistema (com trava/retenção). A partir de uma linha de distribuição comum, existem três válvulas 3/2 vias (botão/mola), cada uma controlando seu respectivo cilindro.</p>
+            </section>
+            
+            <section class="section_diferente">
+                <h3>Simulação:</h3>
+                <p>Primeiro, o operador aciona a válvula principal para pressurizar a linha de distribuição (todas as linhas inferiores ficam azuis). Em seguida, ele clica nos botões das três válvulas de controle dos cilindros, uma por vez. Cada cilindro avança individualmente quando sua respectiva válvula é acionada e recua imediatamente quando o botão é solto, demonstrando o controle independente de cada estágio do separador de caixas. Por fim, a válvula geral é desativada, cortando a pressão de todo o sistema.</p>
+            </section>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>by Arthur Furtado Machado &trade; &copy;</p>
+    </footer>
+
+</body>
+</html>

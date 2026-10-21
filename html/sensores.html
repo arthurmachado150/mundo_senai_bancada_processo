@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Implementação de Software de Gerenciamento</title>
+</head>
+<body>
+    <header>
+        <h1><img class="logo_senai_tamanho" src="../img/logo_senai.jpg" alt="" width="200px"></h1>
+        
+        <nav>
+            <!-- Checkbox invisível e Ícone do Sanduíche -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <!-- Lista de links do menu -->
+            <ul class="menu-links">
+                <li><a href="../index.html">Introdução</a></li>
+                <li><a href="./sensores.html">Sensores</a></li>
+                <li><a href="./simulacoes_mti_brasil.html">MTI Brasil</a></li>
+                <li><a href="./simulacoes_lab_digital_pneumatica.html">Pneumática</a></li>
+                <li><a href="./simulacoes_lab_digital_eletropneumatica.html">Eletropneumática</a></li>
+                <li><a href="./conclusao.html">Conclusão</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- CONTEÚDO CENTRALIZADO -->
+    <main>
+        <h1>Sensores Industriais</h1>
+        
+        <section>
+            <h2>Sensores</h2>
+            <p class="frase_espacamento">Sensores são dispositivos sensíveis a alguma forma de energia do ambiente, como luz, calor, som, velocidade ou força, fornecendo informações relacionadas a uma grandeza que precisa ser medida.</p>
+            <p>Entre as grandezas que podem ser medidas estão temperatura, pressão, velocidade, vazão, corrente, aceleração, posição, viscosidade, umidade e pH.</p>
+        </section>
+
+        <section>
+            <h2 class="h2_diferente">Classificação dos Sensores</h2>
+
+            <section class="section_diferente">
+                <h3>SENSORES DIGITAIS ou BINÁRIOS</h3>
+                <p class="frase_espacamento">Possuem uma saída que assume dois estados lógicos, 0 ou 1, caracterizando uma saída do tipo liga-desliga.</p>
+                <p><strong>Exemplos:</strong> chaves fim de curso, sensores indutivos, capacitivos e ópticos.</p>
+            </section>
+
+            <section class="section_diferente">
+                <h3>SENSORES ANALÓGICOS</h3>
+                <p>Possuem uma saída contínua, relacionada à grandeza física presente na entrada.</p>
+            </section>
+            
+        </section>
+
+        <section>
+            <h2 class="h2_diferente">NPN, PNP, NA e NF</h2>
+
+            <section class="section_diferente">
+                <h3>PNP</h3>
+                <p>No chaveamento <strong>PNP (Sourcing)</strong>, ao detectar o objeto, o sensor envia o potencial positivo (<strong>+Vcc</strong>) para a carga ou para a entrada do CLP.</p>
+            </section>
+
+            <section class="section_diferente">
+                <h3>NPN</h3>
+                <p>No chaveamento <strong>NPN (Sinking)</strong>, ao detectar o objeto, o sensor conecta a carga ao polo negativo (<strong>0 V/GND</strong>).</p>
+            </section>
+
+            <section class="section_diferente">
+                <h3>NA e NF</h3>
+                <p><strong>NA</strong> significa <strong>Normalmente Aberto</strong> e <strong>NF</strong> significa <strong>Normalmente Fechado</strong>. Essas denominações indicam o estado normal do contato do dispositivo.</p>
+            </section>
+
+        </section>
+        
+        <section>
+            <h2>Fluxo da Informação em Sensores</h2>
+            <p><strong>Sensor</strong> → <strong>Conversão da Variável</strong> → <strong>Processamento do Sinal</strong> → <strong>Transmissão da Informação</strong> → <strong>Apresentação da Informação</strong></p>
+        </section>
+        
+        <section>
+            <h2>Sensores Indutivos</h2>
+            <p class="frase_espacamento">Sensores indutivos são equipamentos eletrônicos capazes de detectar a aproximação de peças metálicas.</p>
+            <p class="frase_espacamento">A detecção ocorre sem contato físico entre o sensor e o acionador, aumentando a vida útil do sensor.</p>
+        
+            <img class="imagem_dois" src="../img/sensor_indutivo_ifm.jpg" alt="" width="980px">
+            <small><strong class="ajuste_dos_small">Adaptado de:</strong> <a href="https://www.ifm.com/br/pt/product/IF7103?source=gs&gad_source=1&gad_campaignid=22363523489&gbraid=0AAAAA95jfz2hXRZL3Z3y4RAq2WL595GAy&gclid=CjwKCAjwtp7VBhBjEiwAJfpV-1v4T4pHT6kXRSNzvqgjO6UhlLOWHhH1qKIFaN5FU1RazhXhWp01lxoCOQYQAvD_BwE">IMF - Sensor indutivo - IF7103</a></small><br><br>
+
+            <section class="section_diferente">
+                <h3>PRINCÍPIO DE FUNCIONAMENTO</h3>
+                <p class="frase_espacamento_dois">O funcionamento baseia-se na geração de um campo eletromagnético de alta frequência na face sensora, produzido por uma bobina interna associada a um circuito oscilador.</p>
+                <p class="frase_espacamento_dois">Quando um objeto metálico aproxima-se da face sensora, correntes parasitas (correntes de Foucault) são induzidas em sua superfície, absorvendo energia do campo e reduzindo a amplitude das oscilações.</p>
+                <p>Um circuito avaliador interno detecta essa diminuição na amplitude e comuta o sinal elétrico de saída do sensor.</p>
+            </section>
+        
+            <section class="section_diferente">
+                <h3>APLICAÇÕES E ESPECIFICAÇÕES</h3>
+                <p class="frase_espacamento_dois"><strong>• Aplicações Principais:</strong> Detecção de engrenagens, contagem de peças metálicas em esteiras, controle de fim de curso em máquinas CNC (Comando Numérico Computadorizado) e monitoramento de posicionamento de válvulas.</p>
+                <p class="frase_espacamento_dois"><strong>• Materiais Detectáveis:</strong> Apenas materiais condutores/metálicos (aço, alumínio, latão, cobre, etc.).</p>
+                <p><strong>• Principais Especificações:</strong> Alta imunidade a sujeira, óleos e umidade; alcance de detecção curto (normalmente de 1 mm a 50 mm); alta durabilidade e frequência de comutação elevada.</p>
+            </section>
+
+        </section>
+        
+        <section>
+            <h2>Sensores Capacitivos</h2>
+            <p class="frase_espacamento">Sensores de proximidade capacitivos são equipamentos eletrônicos capazes de detectar a presença ou aproximação de materiais como orgânicos, plásticos, pós, líquidos, madeiras e papéis.</p>
+        
+            <img class="imagem_dois" src="../img/sensor_capacitivo_weg.jpg" alt="" width="980px">
+            <small><strong class="ajuste_dos_small">Adaptado de:</strong> <a href="https://www.weg.net/catalog/weg/UY/pt/Seguran%C3%A7a-de-M%C3%A1quinas%2C-Sensores-Industriais-e-Fontes-de-Alimenta%C3%A7%C3%A3o/Sensores-Industriais/Sensores-de-proximidade-capacitivos/Sensores-de-proximidade-capacitivos/p/MKT_WDC_GLOBAL_CAPACITIVE_SENSORS">WEG - Sensores de proximidade capacitivos</a></small><br><br>
+
+            <section class="section_diferente">
+                <h3>PRINCÍPIO DE FUNCIONAMENTO</h3>
+                <p class="frase_espacamento_dois">O funcionamento baseia-se na geração de um campo eletrostático na face sensora, criado por eletrodos metálicos integrados ao circuito interno. O sensor atua essencialmente como um capacitor aberto.</p>
+                <p class="frase_espacamento_dois">Quando qualquer objeto (metálico ou não metálico) entra no campo eletrostático, ele altera a constante dielétrica do meio, provocando um aumento na capacitância (C) do circuito oscilador.</p>
+                <p>Essa alteração de capacitância eleva a amplitude de oscilação do circuito. Um detector interno identifica essa variação e comuta o sinal elétrico de saída do sensor.</p>
+            </section>
+
+            <section class="section_diferente">
+                <h3 class="h3_diferente">MATERIAL A SER DETECTADO</h3>
+
+                <img class="imagem_um" src="../img/tabela_comparacao_caracteristicas_dieletricas_sensor_capacitivo.jpg" alt="" width="900px">
+                
+                <p>A tabela mostra uma comparação das características dielétricas de diferentes materiais e indica a realização de testes para determinar a distância sensora para o acionador utilizado.</p>
+            </section>
+        
+            <section class="section_diferente">
+                <h3>PERMISSIVIDADE ELÉTRICA NO VÁCUO (Ε₀)</h3>
+                <p class="frase_espacamento_dois">A permissividade elétrica no vácuo é uma constante fundamental utilizada nos princípios físicos dos sensores capacitivos.</p>
+                <p class="frase_espacamento_dois"><strong>ε₀ ≈</strong> 8,854 × 10⁻¹² F/m</p>
+                <p>A unidade de medida é <strong>farad por metro (F/m)</strong>.</p>
+            </section>
+        
+            <section class="section_diferente">
+                <h3>APLICAÇÕES E ESPECIFICAÇÕES</h3>
+                <p class="frase_espacamento_dois"><strong>• Aplicações Principais:</strong> Controle de nível de líquidos em reservatórios não metálicos, detecção de grãos e pós em silos, contagem de embalagens de papelão/plástico e verificação do conteúdo dentro de caixas fechadas.</p>
+                <p class="frase_espacamento_dois"><strong>• Materiais Detectáveis:</strong> Materiais metálicos e não metálicos (água, óleo, plástico, vidro, madeira, alimentos, etc.).</p>
+                <p><strong>• Principais Especificações:</strong> Possui trimpot para ajuste de sensibilidade; distância sensora de curto a médio alcance (2 mm a 25 mm); requer atenção com acúmulo de umidade e resíduos na face sensora.</p>
+            </section>
+
+        </section>
+        
+        <section>
+            <h2>Sensores Ópticos (Fotoelétricos)</h2>
+            <p class="frase_espacamento">Sensores ópticos baseiam-se na transmissão e recepção de luz, que pode ser refletida ou interrompida por um objeto a ser detectado.</p>
+        
+            <section class="section_diferente">
+                <h3>TRANSMISSOR</h3>
+                <p>O transmissor envia o feixe de luz através de um fotodiodo, que emite flashes com alta potência e curta duração. Isso ajuda a evitar que o receptor confunda a luz emitida com a iluminação ambiente.</p>
+            </section>
+        
+            <section class="section_diferente">
+                <h3>RECEPTOR</h3>
+                <p>O receptor é composto por um fototransistor sensível à luz. Em conjunto com um filtro sintonizado na mesma frequência de pulsação dos flashes do transmissor, permite que o receptor reconheça a luz proveniente do transmissor.</p>
+            </section>
+        
+            <section class="section_diferente">
+                <h3 class="h3_diferente">COR E MATERIAL DO ACIONADOR (Sensor Óptico Difuso)</h3>
+
+                <img class="imagem_um" src="../img/cor_material_sensor_optico.jpg" alt="" width="900px">
+
+                <p class="frase_espacamento_dois"><strong>• Alta Refletividade:</strong> Cores claras e superfícies metálicas polidas mantêm ou aumentam a distância de detecção nominal do sensor.</p>
+                <p class="frase_espacamento_dois"><strong>• Alta Absorção:</strong> Cores escuras e materiais porosos/opacos absorvem a luz emitida, reduzindo drasticamente o alcance útil.</p>
+                <p><strong>• Cálculo do Alcance Real:</strong> O alcance real (Sᵣ) é obtido multiplicando o alcance nominal (Sₙ) fornecido pelo fabricante pelos fatores correspondentes: Sᵣ = Sₙ × F꜀ × Fₘ</p>
+            </section>
+
+            <section class="section_diferente">
+                <h3 class="h3_diferente">SENSOR ÓPTICO POR BARREIRA (THROUGH-BEAM)</h3>
+
+                <img class="imagem_um" src="../img/sensor_optico_barreira.jpg" alt="" width="980px">
+                <small><strong class="ajuste_dos_small">Adaptado de:</strong> <a href="https://www.autonics.com/br/model/BJX15M-TDT-P">Autonics - Sensor Tipo Barreira - BJX15M-TDT-P</a></small><br><br>
+
+                <p class="frase_espacamento_dois"><strong>• Princípio de Funcionamento:</strong> O transmissor e o receptor são montados em corpos separados e instalados de frente um para o outro. A detecção ocorre no momento em que o objeto passa entre eles e interrompe o feixe de luz contínuo.</p>
+                <p class="frase_espacamento_dois"><strong>• Características:</strong> Oferece o maior alcance de detecção entre todos os tipos (chegando a dezenas de metros) e alta precisão. É imune à cor, textura ou brilho do objeto, exigindo apenas que o material seja opaco à luz.</p>
+                <p><strong>• Exemplo de Aplicação:</strong> Detecção de veículos em cancelas de pedágio, contagem de grandes volumes em esteiras e sistemas de segurança industrial.</p>
+            </section>
+
+            <section class="section_diferente">
+                <h3 class="h3_diferente">SENSOR ÓPTICO RETRORREFLEXIVO</h3>
+
+                <img class="imagem_um" src="../img/sensor_optico_retrorreflexivo.jpg" alt="" width="980px">
+                <small><strong class="ajuste_dos_small">Adaptado de:</strong> <a href="https://www.sick.com/es/en/catalog/products/detection-sensors/photoelectric-sensors/w12/wl12-3p2431/p/p241310?tab=detail">Sick - Sensor Retrorreflexivo - WL12-3P2431</a></small><br><br>
+
+                <p class="frase_espacamento_dois"><strong>• Princípio de Funcionamento:</strong> O transmissor e o receptor ficam no mesmo corpo. O sensor projeta a luz contra um espelho prismático refletor instalado no lado oposto, que devolve a luz ao receptor. O objeto é detectado quando interrompe essa trajetória de luz refletida.</p>
+                <p class="frase_espacamento_dois"><strong>• Características:</strong> Facilita a instalação elétrica, pois só requer fiação em um dos lados da linha. Possui alcance intermediário e pode utilizar filtros polarizados para evitar falsos acionamentos por objetos muito brilhantes.</p>
+                <p><strong>• Exemplo de Aplicação:</strong> Linhas de envase de garrafas, detecção de paletes e sistemas de transporte onde não é viável passar cabos para o lado oposto.</p>
+            </section>
+
+            <section class="section_diferente">
+                <h3 class="h3_diferente">SENSOR ÓPTICO DIFUSO</h3>
+
+                <img class="imagem_um" src="../img/sensor_optico_difuso.jpg" alt="" width="980px">
+                <small><strong class="ajuste_dos_small">Adaptado de:</strong> <a href="https://cetti.com.br/p/sensor-de-proximidade-optico-difuso-24v-pnp-300mm-1na-m18-g18-3a30pc/">Cetti - Sensor de Proximidade Óptico Difuso 24V PNP 300mm 1NA M18 G18-3A30PC</a></small><br><br>
+
+                <p class="frase_espacamento_dois"><strong>• Princípio de Funcionamento:</strong> O transmissor e o receptor encontram-se no mesmo invólucro e não utilizam espelhos externos. O feixe luminoso é emitido e reflete diretamente na superfície do próprio objeto a ser detectado, retornando ao receptor.</p>
+                <p class="frase_espacamento_dois"><strong>• Características:</strong> É o modelo mais simples e rápido de instalar. No entanto, possui o menor alcance útil e seu funcionamento é totalmente dependente das características do objeto (cor, rugosidade e refletividade do material).</p>
+                <p><strong>• Exemplo de Aplicação:</strong> Identificação da presença de peças pequenas em células robotizadas, detecção de caixas próximas e verificação de nível de preenchimento.</p>
+            </section>
+        
+            <section class="section_diferente">
+                <h3>APLICAÇÕES E ESPECIFICAÇÕES</h3>
+                <p class="frase_espacamento_dois"><strong>• Aplicações Principais:</strong> Contagem de itens em alta velocidade, linhas de embalagem, leitura de marcas de contraste/rótulos e cortinas de luz para proteção de operadores.</p>
+                <p class="frase_espacamento_dois"><strong>• Materiais Detectáveis:</strong> Qualquer objeto sólido ou opaco (ou transparentes quando utilizados sensores com refletores/filtros específicos).</p>
+                <p><strong>• Principais Especificações:</strong> Maior alcance entre os sensores de proximidade (até dezenas de metros no modo Barreira); resposta extremamente rápida; sensível ao acúmulo de poeira ou névoa nas lentes ópticas.</p>
+            </section>
+
+        </section>
+        
+        <section>
+            <h2>Face Sensora</h2>
+            <p class="frase_espacamento_dois">A face sensora é a área física frontal do sensor a partir da qual o campo de detecção é emitido e captado. Esse campo pode ser eletromagnético, eletrostático, óptico ou acústico, dependendo do princípio de funcionamento.</p>
+            <p>O termo é utilizado especificamente para sensores de proximidade, como sensores indutivos, capacitivos, fotoelétricos e ultrassônicos.</p>
+        </section>
+        
+        <section>
+            <h2>Distância Sensora (Sₙ)</h2>
+            <p>A distância sensora nominal <strong>(Sₙ)</strong> é a distância nominal máxima na qual o sensor detecta a presença de um alvo padrão alinhado à sua face sensora.</p>
+        </section>
+        
+        <section>
+            <h2>Alvo Padrão (Standard Target)</h2>
+            <p class="frase_espacamento_dois">O alvo padrão é um objeto normalizado utilizado pelo fabricante para medir e especificar a distância sensora nominal <strong>(Sₙ)</strong>.</p>
+
+            <section class="section_diferente">
+                <h3>Sensores Indutivos</h3>
+                <p>Para sensores indutivos, o alvo padrão é uma chapa quadrada de aço carbono (<strong>FE 360</strong> / <strong>SAE 1020</strong>), com 1 mm de espessura e lado igual ao diâmetro da face sensora ou <strong>3 × Sₙ</strong>, considerando o que for maior.</p>
+            </section>
+
+            <section class="section_diferente">
+                <h3>Sensores Capacitivos</h3>
+                <p>Para sensores capacitivos, o alvo padrão é uma chapa quadrada de aço carbono (<strong>FE 360</strong> / <strong>SAE 1020</strong>) aterrada, com 1 mm de espessura e lado igual ao diâmetro da face sensora ou <strong>3 × Sₙ</strong>, considerando o que for maior.</p>
+            </section>
+
+            <section class="section_diferente">
+                <h3>Sensores Ópticos</h3>
+                <p class="frase_espacamento_dois"><strong>•</strong> Para sensores ópticos difusos, o alvo padrão é um papel branco fosco com 90% de refletância (Kodak White), com formato quadrado de 100 mm × 100 mm ou 200 mm × 200 mm, conforme a faixa de alcance nominal (<strong>Sₙ</strong>).</p>
+                <p class="frase_espacamento_dois"><strong>•</strong> Para sensores ópticos retrorreflexivos, o alvo padrão é um refletor catadióptrico (<strong>espelho prismático</strong>) de modelo e dimensões especificados pelo fabricante.</p>
+                <p><strong>•</strong> Para sensores ópticos do tipo barreira, o alvo padrão é o próprio receptor óptico (para o <strong>teste de alcance</strong>) ou um corpo opaco com dimensão mínima especificada pelo fabricante para a interrupção do feixe.</p>
+            </section>
+
+        </section>
+        
+        <section>
+            <h2>Fator de Atenuação / Fator de Correção</h2>
+            <p class="frase_espacamento_dois">É um multiplicador, geralmente menor que 1, aplicado à distância sensora nominal para determinar o alcance real de detecção quando o objeto é constituído de material diferente do alvo padrão.</p>
+            
+            <section class="section_diferente">
+                <p class="frase_espacamento_dois"><strong>• Aço carbono:</strong> 1,0 (100% da distância Sₙ)</p>
+                <p class="frase_espacamento_dois"><strong>• Aço inoxidável:</strong> aproximadamente 0,60 a 0,80</p>
+                <p class="frase_espacamento_dois"><strong>• Latão:</strong> aproximadamente 0,35 a 0,50</p>
+                <p class="frase_espacamento_dois"><strong>• Alumínio:</strong> aproximadamente 0,30 a 0,45</p>
+                <p><strong>• Cobre:</strong> aproximadamente 0,25 a 0,40</p>
+            </section>
+
+            <p>A alteração do alcance ocorre devido às propriedades elétricas e magnéticas dos diferentes materiais.</p>
+        </section>
+        
+        <section>
+            <h2>Relação entre os Principais Sensores</h2>
+            <p class="frase_espacamento_dois">Os sensores indutivos, capacitivos e ópticos são sensores de proximidade abordados na apresentação, mas utilizam princípios diferentes para realizar a detecção:</p>
+            
+            <section class="section_diferente">
+                <p class="frase_espacamento_dois"><strong>• Indutivo:</strong> utiliza um campo eletromagnético e é destinado à detecção de peças metálicas.</p>
+                <p class="frase_espacamento_dois"><strong>• Capacitivo:</strong> detecta a presença ou aproximação de diferentes materiais, considerando suas características dielétricas.</p>
+                <p><strong>• Óptico:</strong> utiliza transmissão e recepção de luz, podendo detectar objetos por reflexão ou interrupção do feixe.</p>
+            </section>
+
+        </section>
+        
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>by Arthur Furtado Machado &trade; &copy;</p>
+    </footer>
+
+</body>
+</html>
