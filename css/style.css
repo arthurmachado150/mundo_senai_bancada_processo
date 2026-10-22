@@ -126,6 +126,36 @@ section {
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
 }
 
+/* Cada <section> vira uma caixa/cartão individual */
+.section_diferente_product_owner {
+    background-color: #b5e2de;
+    padding: 25px 30px;
+    margin-bottom: 30px; /* Distância entre uma seção e outra */
+    border-radius: 10px;
+    border: 2px solid #3f107c;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Cada <section> vira uma caixa/cartão individual */
+.section_diferente_scrum_master {
+    background-color: #d2d2dd;
+    padding: 25px 30px;
+    margin-bottom: 30px; /* Distância entre uma seção e outra */
+    border-radius: 10px;
+    border: 2px solid #3f107c;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Cada <section> vira uma caixa/cartão individual */
+.section_diferente_developers {
+    background-color: #d2d2dd;
+    padding: 25px 30px;
+    margin-bottom: 30px; /* Distância entre uma seção e outra */
+    border-radius: 10px;
+    border: 2px solid #3f107c;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
+}
+
 /* Remove a margem inferior da última seção */
 section:last-child {
     margin-bottom: 0;
