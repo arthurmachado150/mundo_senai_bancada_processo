@@ -128,31 +128,31 @@ section {
 
 /* Cada <section> vira uma caixa/cartão individual */
 .section_diferente_product_owner {
-    background-color: #b5e2de;
+    background-color: #b5e2d1;
     padding: 25px 30px;
     margin-bottom: 30px; /* Distância entre uma seção e outra */
     border-radius: 10px;
-    border: 2px solid #3f107c;
+    border: 2px solid #58caa4;
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* Cada <section> vira uma caixa/cartão individual */
 .section_diferente_scrum_master {
-    background-color: #d2d2dd;
+    background-color: #8bb3e0;
     padding: 25px 30px;
     margin-bottom: 30px; /* Distância entre uma seção e outra */
     border-radius: 10px;
-    border: 2px solid #3f107c;
+    border: 2px solid #0757b3;
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* Cada <section> vira uma caixa/cartão individual */
 .section_diferente_developers {
-    background-color: #d2d2dd;
+    background-color: #e9db9c;
     padding: 25px 30px;
     margin-bottom: 30px; /* Distância entre uma seção e outra */
     border-radius: 10px;
-    border: 2px solid #3f107c;
+    border: 2px solid #866f06;
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
 }
 
@@ -204,12 +204,77 @@ h4 {
     margin-bottom: 15px;
 }
 
-.h4_diferente {
-    color: #4351b9;
-    border-bottom: 2px solid #31008d;
+.h4_product_owner {
+    color: #17632d;
+    border-bottom: 2px solid #114e09;
     padding-bottom: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
+
+.h4_scrum_master {
+    color: #055dd1;
+    border-bottom: 2px solid #0461b9;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.h4_developers {
+    color: #c97a04;
+    border-bottom: 2px solid #833d05;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #082838;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #334155;
+    background: #ffffff;
+}
+
+th {
+    border: 2px solid #082838;
+    padding: 12px 16px;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5;
+}
+
+td {
+    border: 2px solid #6e7e92;
+    padding: 12px 16px;
+    text-align: left;
+    vertical-align: center;
+    line-height: 1.5;
+}
+
+.td_negrito {
+    font-weight: bold;
+    border: 2px solid #6e7e92;
+    padding: 12px 16px;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5;
+}
+
+th {
+    background: #e4faff;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+tbody tr:hover {
+    background: #f1f5f9;
+}
+
 
 video {
     max-width: 100%;

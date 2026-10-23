@@ -109,11 +109,11 @@
                     <h4>Transparência</h4>
                     <p>O processo e o trabalho devem ser visíveis para quem realiza e para quem recebe o produto.</p>
                 </section>
-                <section class="section_diferente_02"></section>
+                <section class="section_diferente_02">
                     <h4>Inspeção</h4>
                     <p>Avaliação frequente dos artefatos e progresso rumo à meta para detectar variações indesejadas.</p>
                 </section>
-                <section class="section_diferente_02"></section>
+                <section class="section_diferente_02">
                     <h4>Adaptação</h4>
                     <p>Ajuste imediato do processo ou do produto quando desvios em relação aos limites aceitáveis ocorrem.</p>
                 </section>
@@ -121,271 +121,109 @@
             <section class="section_diferente">
                 <h3>Cargos</h3>
                 <section class="section_diferente_product_owner">
-                    <h4>Product Owner (PO)</h4>
+                    <h4 class="h4_product_owner">Product Owner (PO)</h4>
                     <p>Maximiza o valor do produto. Gerencia o Product Backlog, ordena prioridades e expressa claramente os itens para o time.</p>
                 </section>
                 <section class="section_diferente_scrum_master">
-                    <h4>Scrum Master</h4>
+                    <h4 class="h4_scrum_master">Scrum Master</h4>
                     <p>Líder servidor que garante a eficácia do time, remove impedimentos organizacionais e facilita a aplicação do framework.</p>
                 </section>
                 <section class="section_diferente_developers">
-                    <h4>Developers (Time)</h4>
+                    <h4 class="h4_developers">Developers (Time)</h4>
                     <p>Profissionais multidisciplinares comprometidos em criar qualquer aspecto de um incremento usável a cada Sprint.</p>
                 </section>
+            </section>
+            <section class="section_diferente">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Evento</th>
+                        <th>Duração máxima</th>
+                        <th>Artefato e compromisso</th>
+                        <th>Propósito principal</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td_negrito">Sprint Planning</td>
+                            <td>Até 8 horas</td>
+                            <td>Sprint Backlog (Meta da Sprint)</td>
+                            <td>Planejar o trabalho a ser executado, definindo o valor e o plano de ação da Sprint.</td>
+                        </tr>
+                        <tr>
+                            <td class="td_negrito">Daily Scrum</td>
+                            <td>15 minutos</td>
+                            <td>Progresso rumo à Meta da Sprint</td>
+                            <td>Inspecionar o progresso e adaptar o plano diário de trabalho dos Developers.</td>
+                        </tr>
+                        <tr>
+                            <td class="td_negrito">Sprint Review</td>
+                            <td>Até 4 horas</td>
+                            <td>Incremento (Definição de Pronto)</td>
+                            <td>Inspecionar o resultado com stakeholders e adaptar o Product Backlog. A Definição de Pronto é o compromisso associado ao Incremento.</td>
+                        </tr>
+                        <tr>
+                            <td class="td_negrito">Sprint Retrospective</td>
+                            <td>Até 3 horas</td>
+                            <td>Ações de melhoria</td>
+                            <td>Inspecionar pessoas, relações, processos e ferramentas e planejar melhorias para a próxima Sprint.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+
+        <section>
+            <h2>Arquitetura Integrada</h2>
+            <section class="section_diferente">
+                <h3>O Modelo Dual-Track Agile</h3>
                 <section class="section_diferente_02">
-                    <h4>Fase 4: Prototipação (Materialização de Hipóteses)</h4>
-                    <p class="frase_espacamento"><strong>Transformar conceitos abstratos em artefatos tangíveis para testar premissas com o menor custo possível.</strong></p>
+                    <h4>Esteira de Discovery (Design Thinking)</h4>
                     <ul>
-                        <li><strong>Baixa Fidelidade:</strong> Protótipos em papel (paper prototypes), storyboards e encenações de serviços (roleplaying).</li>
-                        <li><strong>Média Fidelidade:</strong> Wireframes clicáveis e fluxos de navegação interativos criados em ferramentas digitais (Figma, Miro).</li>
-                        <li><strong>Mágico de Oz (Wizard of Oz):</strong> Simulação onde a interface parece automatizada, mas os processos do backlog são executados manualmente pelos bastidores para testar a adesão antes de codificar.</li>
+                        <li><strong>Objetivo:</strong> Pesquisa, prototipação e validação contínua.</li>
+                        <li><strong>Foco:</strong> Reduzir riscos de utilidade e usabilidade continuamente.</li>
+                        <li><strong>Ritmo:</strong> Em paralelo e em interação com as Sprints.</li>
                     </ul>
                 </section>
                 <section class="section_diferente_02">
-                    <h4>Fase 5: Teste e Iteração (Validação com Usuários)</h4>
-                    <p class="frase_espacamento"><strong>Colocar o protótipo nas mãos dos usuários finais para observar o uso real e refinar a solução.</strong></p>
+                    <h4>Esteira de Delivery (Scrum Sprints)</h4>
                     <ul>
-                        <li><strong>Testes de Usabilidade Moderados:</strong> Execução de cenários de tarefas enquanto o usuário externaliza seus raciocínios (Think-Aloud Protocol).</li>
-                        <li><strong>Matriz de Feedback:</strong> Grade quadripartida para compilar registros: O que funcionou well, O que precisa ajustar, Dúvidas surgidas e Novas ideias.</li>
+                        <li><strong>Objetivo:</strong> Engenharia, testes e implantação.</li>
+                        <li><strong>Foco:</strong> Construir incrementos estáveis, escaláveis e funcionais.</li>
+                        <li><strong>Ritmo:</strong> Sprints fixas de até 1 mês (comumente 2 a 4 semanas).</li>
                     </ul>
                 </section>
             </section>
             <section class="section_diferente">
-                <h3>A Ponte: Traduzindo Descobertas em Backlog</h3>
-                <p class="frase_espacamento"><strong>Da Validação para a Engenharia:</strong>  Uma vez que a solução passa pelos testes de usabilidade do Design Thinking, os protótipos e fluxos aprovados deixam de ser hipóteses e passam a alimentar diretamente o <strong>Product Backlog</strong> do Scrum na forma de Histórias de Usuário (User Stories).</p>
-                <section class="section_diferente_02">
-                    <h4>Anatomia da Passagem de Bastão (Definition of Ready - DoR)</h4>
-                    <p class="frase_espacamento">Para que um item saído do Design Thinking esteja pronto para entrar na Sprint Planning do Scrum, ele deve atender a critérios mínimos de maturidade:</p>
-                    <ul>
-                        <li><strong>Estrutura da User Story:</strong> Acompanhar a rotina dos usuários em seu ambiente real sem interferir no fluxo de trabalho.</li>
-                        <li><strong>Anexos Obrigatórios:</strong> Telas do protótipo testado, jornada do usuário associada e fluxos de exceção.</li>
-                        <li><strong>Critérios de Aceitação Claros:</strong> Regras de negócio e condições testáveis definidas junto ao Product Owner.</li>
-                    </ul>
-                </section>
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Dimensão</th>
+                        <th>Design Thinking (Problem & Solution Space)</th>
+                        <th>Scrum (Execution Space)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td_negrito">Pergunta Central</td>
+                            <td>"Estamos construindo o produto certo para o usuário?"</td>
+                            <td>"Estamos construindo o produto da forma mais eficiente?"</td>
+                        </tr>
+                        <tr>
+                            <td class="td_negrito">Natureza do Trabalho</td>
+                            <td>Exploratória, não linear, investigativa e iterativa.</td>
+                            <td>Estruturada, incremental, com prazos e entregáveis claros.</td>
+                        </tr>
+                        <tr>
+                            <td class="td_negrito">Acompanhamento</td>
+                            <td>Aprendizado validado e satisfação nos testes de conceito.</td>
+                            <td>Progresso rumo aos objetivos, valor entregue e qualidade do incremento.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </section>
 
-
-
-
-
-
-
-
-        <section>
-            <h2 class="h2_diferente">NPN, PNP, NA e NF</h2>
-
-            <section class="section_diferente">
-                <h3>PNP</h3>
-                <p>No chaveamento <strong>PNP (Sourcing)</strong>, ao detectar o objeto, o sensor envia o potencial positivo (<strong>+Vcc</strong>) para a carga ou para a entrada do CLP.</p>
-            </section>
-
-            <section class="section_diferente">
-                <h3>NPN</h3>
-                <p>No chaveamento <strong>NPN (Sinking)</strong>, ao detectar o objeto, o sensor conecta a carga ao polo negativo (<strong>0 V/GND</strong>).</p>
-            </section>
-
-            <section class="section_diferente">
-                <h3>NA e NF</h3>
-                <p><strong>NA</strong> significa <strong>Normalmente Aberto</strong> e <strong>NF</strong> significa <strong>Normalmente Fechado</strong>. Essas denominações indicam o estado normal do contato do dispositivo.</p>
-            </section>
-
-        </section>
-        
-        <section>
-            <h2>Fluxo da Informação em Sensores</h2>
-            <p><strong>Sensor</strong> → <strong>Conversão da Variável</strong> → <strong>Processamento do Sinal</strong> → <strong>Transmissão da Informação</strong> → <strong>Apresentação da Informação</strong></p>
-        </section>
-        
-        <section>
-            <h2>Sensores Indutivos</h2>
-            <p class="frase_espacamento">Sensores indutivos são equipamentos eletrônicos capazes de detectar a aproximação de peças metálicas.</p>
-            <p class="frase_espacamento">A detecção ocorre sem contato físico entre o sensor e o acionador, aumentando a vida útil do sensor.</p>
-        
-            <img class="imagem_dois" src="../img/sensor_indutivo_ifm.jpg" alt="" width="980px">
-            <small><strong class="ajuste_dos_small">Adaptado de:</strong> <a href="https://www.ifm.com/br/pt/product/IF7103?source=gs&gad_source=1&gad_campaignid=22363523489&gbraid=0AAAAA95jfz2hXRZL3Z3y4RAq2WL595GAy&gclid=CjwKCAjwtp7VBhBjEiwAJfpV-1v4T4pHT6kXRSNzvqgjO6UhlLOWHhH1qKIFaN5FU1RazhXhWp01lxoCOQYQAvD_BwE">IMF - Sensor indutivo - IF7103</a></small><br><br>
-
-            <section class="section_diferente">
-                <h3>PRINCÍPIO DE FUNCIONAMENTO</h3>
-                <p class="frase_espacamento_dois">O funcionamento baseia-se na geração de um campo eletromagnético de alta frequência na face sensora, produzido por uma bobina interna associada a um circuito oscilador.</p>
-                <p class="frase_espacamento_dois">Quando um objeto metálico aproxima-se da face sensora, correntes parasitas (correntes de Foucault) são induzidas em sua superfície, absorvendo energia do campo e reduzindo a amplitude das oscilações.</p>
-                <p>Um circuito avaliador interno detecta essa diminuição na amplitude e comuta o sinal elétrico de saída do sensor.</p>
-            </section>
-        
-            <section class="section_diferente">
-                <h3>APLICAÇÕES E ESPECIFICAÇÕES</h3>
-                <p class="frase_espacamento_dois"><strong>• Aplicações Principais:</strong> Detecção de engrenagens, contagem de peças metálicas em esteiras, controle de fim de curso em máquinas CNC (Comando Numérico Computadorizado) e monitoramento de posicionamento de válvulas.</p>
-                <p class="frase_espacamento_dois"><strong>• Materiais Detectáveis:</strong> Apenas materiais condutores/metálicos (aço, alumínio, latão, cobre, etc.).</p>
-                <p><strong>• Principais Especificações:</strong> Alta imunidade a sujeira, óleos e umidade; alcance de detecção curto (normalmente de 1 mm a 50 mm); alta durabilidade e frequência de comutação elevada.</p>
-            </section>
-
-        </section>
-        
-        <section>
-            <h2>Sensores Capacitivos</h2>
-            <p class="frase_espacamento">Sensores de proximidade capacitivos são equipamentos eletrônicos capazes de detectar a presença ou aproximação de materiais como orgânicos, plásticos, pós, líquidos, madeiras e papéis.</p>
-        
-            <img class="imagem_dois" src="../img/sensor_capacitivo_weg.jpg" alt="" width="980px">
-            <small><strong class="ajuste_dos_small">Adaptado de:</strong> <a href="https://www.weg.net/catalog/weg/UY/pt/Seguran%C3%A7a-de-M%C3%A1quinas%2C-Sensores-Industriais-e-Fontes-de-Alimenta%C3%A7%C3%A3o/Sensores-Industriais/Sensores-de-proximidade-capacitivos/Sensores-de-proximidade-capacitivos/p/MKT_WDC_GLOBAL_CAPACITIVE_SENSORS">WEG - Sensores de proximidade capacitivos</a></small><br><br>
-
-            <section class="section_diferente">
-                <h3>PRINCÍPIO DE FUNCIONAMENTO</h3>
-                <p class="frase_espacamento_dois">O funcionamento baseia-se na geração de um campo eletrostático na face sensora, criado por eletrodos metálicos integrados ao circuito interno. O sensor atua essencialmente como um capacitor aberto.</p>
-                <p class="frase_espacamento_dois">Quando qualquer objeto (metálico ou não metálico) entra no campo eletrostático, ele altera a constante dielétrica do meio, provocando um aumento na capacitância (C) do circuito oscilador.</p>
-                <p>Essa alteração de capacitância eleva a amplitude de oscilação do circuito. Um detector interno identifica essa variação e comuta o sinal elétrico de saída do sensor.</p>
-            </section>
-
-            <section class="section_diferente">
-                <h3 class="h3_diferente">MATERIAL A SER DETECTADO</h3>
-
-                <img class="imagem_um" src="../img/tabela_comparacao_caracteristicas_dieletricas_sensor_capacitivo.jpg" alt="" width="900px">
-                
-                <p>A tabela mostra uma comparação das características dielétricas de diferentes materiais e indica a realização de testes para determinar a distância sensora para o acionador utilizado.</p>
-            </section>
-        
-            <section class="section_diferente">
-                <h3>PERMISSIVIDADE ELÉTRICA NO VÁCUO (Ε₀)</h3>
-                <p class="frase_espacamento_dois">A permissividade elétrica no vácuo é uma constante fundamental utilizada nos princípios físicos dos sensores capacitivos.</p>
-                <p class="frase_espacamento_dois"><strong>ε₀ ≈</strong> 8,854 × 10⁻¹² F/m</p>
-                <p>A unidade de medida é <strong>farad por metro (F/m)</strong>.</p>
-            </section>
-        
-            <section class="section_diferente">
-                <h3>APLICAÇÕES E ESPECIFICAÇÕES</h3>
-                <p class="frase_espacamento_dois"><strong>• Aplicações Principais:</strong> Controle de nível de líquidos em reservatórios não metálicos, detecção de grãos e pós em silos, contagem de embalagens de papelão/plástico e verificação do conteúdo dentro de caixas fechadas.</p>
-                <p class="frase_espacamento_dois"><strong>• Materiais Detectáveis:</strong> Materiais metálicos e não metálicos (água, óleo, plástico, vidro, madeira, alimentos, etc.).</p>
-                <p><strong>• Principais Especificações:</strong> Possui trimpot para ajuste de sensibilidade; distância sensora de curto a médio alcance (2 mm a 25 mm); requer atenção com acúmulo de umidade e resíduos na face sensora.</p>
-            </section>
-
-        </section>
-        
-        <section>
-            <h2>Sensores Ópticos (Fotoelétricos)</h2>
-            <p class="frase_espacamento">Sensores ópticos baseiam-se na transmissão e recepção de luz, que pode ser refletida ou interrompida por um objeto a ser detectado.</p>
-        
-            <section class="section_diferente">
-                <h3>TRANSMISSOR</h3>
-                <p>O transmissor envia o feixe de luz através de um fotodiodo, que emite flashes com alta potência e curta duração. Isso ajuda a evitar que o receptor confunda a luz emitida com a iluminação ambiente.</p>
-            </section>
-        
-            <section class="section_diferente">
-                <h3>RECEPTOR</h3>
-                <p>O receptor é composto por um fototransistor sensível à luz. Em conjunto com um filtro sintonizado na mesma frequência de pulsação dos flashes do transmissor, permite que o receptor reconheça a luz proveniente do transmissor.</p>
-            </section>
-        
-            <section class="section_diferente">
-                <h3 class="h3_diferente">COR E MATERIAL DO ACIONADOR (Sensor Óptico Difuso)</h3>
-
-                <img class="imagem_um" src="../img/cor_material_sensor_optico.jpg" alt="" width="900px">
-
-                <p class="frase_espacamento_dois"><strong>• Alta Refletividade:</strong> Cores claras e superfícies metálicas polidas mantêm ou aumentam a distância de detecção nominal do sensor.</p>
-                <p class="frase_espacamento_dois"><strong>• Alta Absorção:</strong> Cores escuras e materiais porosos/opacos absorvem a luz emitida, reduzindo drasticamente o alcance útil.</p>
-                <p><strong>• Cálculo do Alcance Real:</strong> O alcance real (Sᵣ) é obtido multiplicando o alcance nominal (Sₙ) fornecido pelo fabricante pelos fatores correspondentes: Sᵣ = Sₙ × F꜀ × Fₘ</p>
-            </section>
-
-            <section class="section_diferente">
-                <h3 class="h3_diferente">SENSOR ÓPTICO POR BARREIRA (THROUGH-BEAM)</h3>
-
-                <img class="imagem_um" src="../img/sensor_optico_barreira.jpg" alt="" width="980px">
-                <small><strong class="ajuste_dos_small">Adaptado de:</strong> <a href="https://www.autonics.com/br/model/BJX15M-TDT-P">Autonics - Sensor Tipo Barreira - BJX15M-TDT-P</a></small><br><br>
-
-                <p class="frase_espacamento_dois"><strong>• Princípio de Funcionamento:</strong> O transmissor e o receptor são montados em corpos separados e instalados de frente um para o outro. A detecção ocorre no momento em que o objeto passa entre eles e interrompe o feixe de luz contínuo.</p>
-                <p class="frase_espacamento_dois"><strong>• Características:</strong> Oferece o maior alcance de detecção entre todos os tipos (chegando a dezenas de metros) e alta precisão. É imune à cor, textura ou brilho do objeto, exigindo apenas que o material seja opaco à luz.</p>
-                <p><strong>• Exemplo de Aplicação:</strong> Detecção de veículos em cancelas de pedágio, contagem de grandes volumes em esteiras e sistemas de segurança industrial.</p>
-            </section>
-
-            <section class="section_diferente">
-                <h3 class="h3_diferente">SENSOR ÓPTICO RETRORREFLEXIVO</h3>
-
-                <img class="imagem_um" src="../img/sensor_optico_retrorreflexivo.jpg" alt="" width="980px">
-                <small><strong class="ajuste_dos_small">Adaptado de:</strong> <a href="https://www.sick.com/es/en/catalog/products/detection-sensors/photoelectric-sensors/w12/wl12-3p2431/p/p241310?tab=detail">Sick - Sensor Retrorreflexivo - WL12-3P2431</a></small><br><br>
-
-                <p class="frase_espacamento_dois"><strong>• Princípio de Funcionamento:</strong> O transmissor e o receptor ficam no mesmo corpo. O sensor projeta a luz contra um espelho prismático refletor instalado no lado oposto, que devolve a luz ao receptor. O objeto é detectado quando interrompe essa trajetória de luz refletida.</p>
-                <p class="frase_espacamento_dois"><strong>• Características:</strong> Facilita a instalação elétrica, pois só requer fiação em um dos lados da linha. Possui alcance intermediário e pode utilizar filtros polarizados para evitar falsos acionamentos por objetos muito brilhantes.</p>
-                <p><strong>• Exemplo de Aplicação:</strong> Linhas de envase de garrafas, detecção de paletes e sistemas de transporte onde não é viável passar cabos para o lado oposto.</p>
-            </section>
-
-            <section class="section_diferente">
-                <h3 class="h3_diferente">SENSOR ÓPTICO DIFUSO</h3>
-
-                <img class="imagem_um" src="../img/sensor_optico_difuso.jpg" alt="" width="980px">
-                <small><strong class="ajuste_dos_small">Adaptado de:</strong> <a href="https://cetti.com.br/p/sensor-de-proximidade-optico-difuso-24v-pnp-300mm-1na-m18-g18-3a30pc/">Cetti - Sensor de Proximidade Óptico Difuso 24V PNP 300mm 1NA M18 G18-3A30PC</a></small><br><br>
-
-                <p class="frase_espacamento_dois"><strong>• Princípio de Funcionamento:</strong> O transmissor e o receptor encontram-se no mesmo invólucro e não utilizam espelhos externos. O feixe luminoso é emitido e reflete diretamente na superfície do próprio objeto a ser detectado, retornando ao receptor.</p>
-                <p class="frase_espacamento_dois"><strong>• Características:</strong> É o modelo mais simples e rápido de instalar. No entanto, possui o menor alcance útil e seu funcionamento é totalmente dependente das características do objeto (cor, rugosidade e refletividade do material).</p>
-                <p><strong>• Exemplo de Aplicação:</strong> Identificação da presença de peças pequenas em células robotizadas, detecção de caixas próximas e verificação de nível de preenchimento.</p>
-            </section>
-        
-            <section class="section_diferente">
-                <h3>APLICAÇÕES E ESPECIFICAÇÕES</h3>
-                <p class="frase_espacamento_dois"><strong>• Aplicações Principais:</strong> Contagem de itens em alta velocidade, linhas de embalagem, leitura de marcas de contraste/rótulos e cortinas de luz para proteção de operadores.</p>
-                <p class="frase_espacamento_dois"><strong>• Materiais Detectáveis:</strong> Qualquer objeto sólido ou opaco (ou transparentes quando utilizados sensores com refletores/filtros específicos).</p>
-                <p><strong>• Principais Especificações:</strong> Maior alcance entre os sensores de proximidade (até dezenas de metros no modo Barreira); resposta extremamente rápida; sensível ao acúmulo de poeira ou névoa nas lentes ópticas.</p>
-            </section>
-
-        </section>
-        
-        <section>
-            <h2>Face Sensora</h2>
-            <p class="frase_espacamento_dois">A face sensora é a área física frontal do sensor a partir da qual o campo de detecção é emitido e captado. Esse campo pode ser eletromagnético, eletrostático, óptico ou acústico, dependendo do princípio de funcionamento.</p>
-            <p>O termo é utilizado especificamente para sensores de proximidade, como sensores indutivos, capacitivos, fotoelétricos e ultrassônicos.</p>
-        </section>
-        
-        <section>
-            <h2>Distância Sensora (Sₙ)</h2>
-            <p>A distância sensora nominal <strong>(Sₙ)</strong> é a distância nominal máxima na qual o sensor detecta a presença de um alvo padrão alinhado à sua face sensora.</p>
-        </section>
-        
-        <section>
-            <h2>Alvo Padrão (Standard Target)</h2>
-            <p class="frase_espacamento_dois">O alvo padrão é um objeto normalizado utilizado pelo fabricante para medir e especificar a distância sensora nominal <strong>(Sₙ)</strong>.</p>
-
-            <section class="section_diferente">
-                <h3>Sensores Indutivos</h3>
-                <p>Para sensores indutivos, o alvo padrão é uma chapa quadrada de aço carbono (<strong>FE 360</strong> / <strong>SAE 1020</strong>), com 1 mm de espessura e lado igual ao diâmetro da face sensora ou <strong>3 × Sₙ</strong>, considerando o que for maior.</p>
-            </section>
-
-            <section class="section_diferente">
-                <h3>Sensores Capacitivos</h3>
-                <p>Para sensores capacitivos, o alvo padrão é uma chapa quadrada de aço carbono (<strong>FE 360</strong> / <strong>SAE 1020</strong>) aterrada, com 1 mm de espessura e lado igual ao diâmetro da face sensora ou <strong>3 × Sₙ</strong>, considerando o que for maior.</p>
-            </section>
-
-            <section class="section_diferente">
-                <h3>Sensores Ópticos</h3>
-                <p class="frase_espacamento_dois"><strong>•</strong> Para sensores ópticos difusos, o alvo padrão é um papel branco fosco com 90% de refletância (Kodak White), com formato quadrado de 100 mm × 100 mm ou 200 mm × 200 mm, conforme a faixa de alcance nominal (<strong>Sₙ</strong>).</p>
-                <p class="frase_espacamento_dois"><strong>•</strong> Para sensores ópticos retrorreflexivos, o alvo padrão é um refletor catadióptrico (<strong>espelho prismático</strong>) de modelo e dimensões especificados pelo fabricante.</p>
-                <p><strong>•</strong> Para sensores ópticos do tipo barreira, o alvo padrão é o próprio receptor óptico (para o <strong>teste de alcance</strong>) ou um corpo opaco com dimensão mínima especificada pelo fabricante para a interrupção do feixe.</p>
-            </section>
-
-        </section>
-        
-        <section>
-            <h2>Fator de Atenuação / Fator de Correção</h2>
-            <p class="frase_espacamento_dois">É um multiplicador, geralmente menor que 1, aplicado à distância sensora nominal para determinar o alcance real de detecção quando o objeto é constituído de material diferente do alvo padrão.</p>
-            
-            <section class="section_diferente">
-                <p class="frase_espacamento_dois"><strong>• Aço carbono:</strong> 1,0 (100% da distância Sₙ)</p>
-                <p class="frase_espacamento_dois"><strong>• Aço inoxidável:</strong> aproximadamente 0,60 a 0,80</p>
-                <p class="frase_espacamento_dois"><strong>• Latão:</strong> aproximadamente 0,35 a 0,50</p>
-                <p class="frase_espacamento_dois"><strong>• Alumínio:</strong> aproximadamente 0,30 a 0,45</p>
-                <p><strong>• Cobre:</strong> aproximadamente 0,25 a 0,40</p>
-            </section>
-
-            <p>A alteração do alcance ocorre devido às propriedades elétricas e magnéticas dos diferentes materiais.</p>
-        </section>
-        
-        <section>
-            <h2>Relação entre os Principais Sensores</h2>
-            <p class="frase_espacamento_dois">Os sensores indutivos, capacitivos e ópticos são sensores de proximidade abordados na apresentação, mas utilizam princípios diferentes para realizar a detecção:</p>
-            
-            <section class="section_diferente">
-                <p class="frase_espacamento_dois"><strong>• Indutivo:</strong> utiliza um campo eletromagnético e é destinado à detecção de peças metálicas.</p>
-                <p class="frase_espacamento_dois"><strong>• Capacitivo:</strong> detecta a presença ou aproximação de diferentes materiais, considerando suas características dielétricas.</p>
-                <p><strong>• Óptico:</strong> utiliza transmissão e recepção de luz, podendo detectar objetos por reflexão ou interrupção do feixe.</p>
-            </section>
-
-        </section>
-        
     </main>
 
     <!-- RODAPÉ -->
