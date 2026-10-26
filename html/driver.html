@@ -20,14 +20,16 @@
             <!-- Lista de links do menu -->
             <ul class="menu-links">
                 <li><a href="../index.html">Introdução</a></li>
-                <li><a href="./design_thinking_e_metodologia_scrum.html">Design Thinking & Scrum</a></li>
-                <li><a href="./piramide_automacao.html">Pirâmide de Automação</a></li>
-                <li><a href="./sensor_reedSwitch.html">Sensor Reed Switch</a></li>
-                <li><a href="./fundamentos_pneumatica.html">Pneumática</a></li>
-                <li><a href="./paineis_eletricos.html">Painéis Elétricos</a></li>
                 <li><a href="./clp.html">Controlador Lógico Programável</a></li>
-                <li><a href="./driver.html">Driver de Comunicação</a></li>
                 <li><a href="./ihm.html">Interface Homem-Máquina</a></li>
+                <li><a href="./equipamentos_processo.html">Equipamentos da Bancada Processos</a></li>
+                <li><a href="./fundamentos_pneumatica.html">Pneumática</a></li>
+                <li><a href="./driver.html">Driver de Comunicação</a></li>
+                <li><a href="./painel_eletrico.html">Painéis Elétricos</a></li>
+                <li><a href="./sensor_reedSwitch.html">Sensor Reed Switch</a></li>
+                <li><a href="./piramide_automacao.html">Pirâmide de Automação</a></li>
+                <li><a href="./design_thinking_e_metodologia_scrum.html">Design Thinking & Scrum</a></li>
+                <li><a href="./trello.html">Trello</a></li>
                 <li><a href="./contatos.html">Contatos</a></li>
             </ul>
         </nav>
@@ -183,7 +185,7 @@
                     <h4>Aba Ethernet</h4>
                     <ul>
                         <li><strong>Transport:</strong> TCP/IP.</li>
-                        <li><strong>Main IP:</strong> endereço IP do CLP da bancada.</li>
+                        <li><strong>Main IP:</strong> endereço IP do CLP da bancada (10.78.49.20).</li>
                         <li><strong>Port:</strong> 102, que é a porta padrão do ISO sobre TCP (a tela vem com 502, que é a porta do Modbus TCP).</li>
                     </ul>
                 </section>
@@ -219,7 +221,7 @@
                             <td>Endereço (offset) dentro da área ou do DB.</td>
                         </tr>
                     </tbody>
-                </table><br>
+                </table>
                 <section class="section_diferente_02">
                     <h4>Códigos de tipo de dado (os mais usados)</h4>
                     <ul>
@@ -254,6 +256,43 @@
                 <p class="frase_espacamento">Na bancada, o supervisório <strong>Elipse E3</strong> (com as telas TelaInicial, TelaMenu, TelaProcesso e TelaHistorico) se comunica com o <strong>CLP Siemens S7-1200</strong> (CPU 1215C DC/DC/DC, projeto "processo" no TIA Portal) pela rede Ethernet da bancada, usando o driver MProt em modo ISOTCP. Na Pirâmide de Automação, essa é a ligação entre o Nível 3 (supervisão) e o Nível 2 (controle).</p>
                 <p class="frase_espacamento"><strong>Caminho dos dados:</strong> Telas do Elipse E3 &rarr; Driver MProt (ISOTCP) &rarr; Ethernet (switch de 5 portas) &rarr; CLP S7-1200 &rarr; bloco de dados DB6</p>
                 <p>Toda a troca é feita por um único bloco de dados do CLP, o <strong>DB6 "Supervisório"</strong>, que fica na pasta de comunicação do programa. O CLP escreve nele o estado do processo e o supervisório lê esses valores; também pode escrever nele para enviar comandos.</p>
+            </section>
+
+            <section class="section_diferente">
+                <h3>Endereçamento da rede da bancada</h3>
+                <p class="frase_espacamento">Para dois equipamentos conversarem em uma rede Ethernet, cada um precisa de um <strong>endereço IP</strong>, que o localiza na rede, e possui um <strong>endereço MAC</strong>, um identificador gravado de fábrica na placa de rede. Na bancada, todos os equipamentos com rede ficam na mesma faixa de endereços, 10.78.49.x:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Equipamento</th>
+                            <th>Endereço IP</th>
+                            <th>Endereço MAC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td_negrito">CLP</td>
+                            <td class="td_centro">10.78.49.20</td>
+                            <td class="td_centro">4C-E7-05-12-27-44</td>
+                        </tr>
+                        <tr>
+                            <td class="td_negrito">IHM</td>
+                            <td class="td_centro">10.78.49.21</td>
+                            <td class="td_centro">8C-F3-19-EF-D7-D8</td>
+                        </tr>
+                        <tr>
+                            <td class="td_negrito">drv_eixo_x</td>
+                            <td class="td_centro">10.78.49.22</td>
+                            <td class="td_centro">00-23-C6-44-65-35</td>
+                        </tr>
+                        <tr>
+                            <td class="td_negrito">drv_eixo_y</td>
+                            <td class="td_centro">10.78.49.23</td>
+                            <td class="td_centro">00-23-C6-44-65-38</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 15px;">O driver MProt se conecta ao <strong>CLP</strong>, por isso o IP 10.78.49.20 é o valor do campo Main IP na aba Ethernet. A IHM e os drives dos atuadores também ficam na rede: a IHM troca dados com o CLP, e os drives (<em>drv_eixo_x</em> e <em>drv_eixo_y</em>) recebem os comandos de movimento dos eixos X e Y. Não confunda: os drives são equipamentos físicos que controlam os atuadores elétricos, e o driver de comunicação é o software do supervisório.</p>
             </section>
 
             <section class="section_diferente">

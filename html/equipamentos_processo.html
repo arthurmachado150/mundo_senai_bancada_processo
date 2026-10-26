@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Mundo Senai - Bancada Processo | Equipamentos</title>
+</head>
+
+<body>
+    <header>
+        <h1><img class="logo_senai_tamanho" src="../img/logo_senai.jpg" alt="Logo SENAI" width="200px"></h1>
+
+        <nav>
+            <!-- Checkbox invisível e Ícone do Sanduíche -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <!-- Lista de links do menu -->
+            <ul class="menu-links">
+                <li><a href="../index.html">Introdução</a></li>
+                <li><a href="./clp.html">Controlador Lógico Programável</a></li>
+                <li><a href="./ihm.html">Interface Homem-Máquina</a></li>
+                <li><a href="./equipamentos_processo.html">Equipamentos da Bancada Processos</a></li>
+                <li><a href="./fundamentos_pneumatica.html">Pneumática</a></li>
+                <li><a href="./driver.html">Driver de Comunicação</a></li>
+                <li><a href="./painel_eletrico.html">Painéis Elétricos</a></li>
+                <li><a href="./sensor_reedSwitch.html">Sensor Reed Switch</a></li>
+                <li><a href="./piramide_automacao.html">Pirâmide de Automação</a></li>
+                <li><a href="./design_thinking_e_metodologia_scrum.html">Design Thinking & Scrum</a></li>
+                <li><a href="./trello.html">Trello</a></li>
+                <li><a href="./contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO CENTRALIZADO -->
+    <main>
+        <h1>Equipamentos da Bancada Processos</h1>
+
+        <section>
+            <h2>Visão Geral</h2>
+            <section class="section_diferente">
+                <p class="frase_espacamento">A Bancada de Processos SMART 4.0 reúne 35 componentes entre controle, comunicação, proteção elétrica, atuadores, vácuo, pneumática e comandos do operador. Nesta página, cada um deles aparece com o seu modelo e uma explicação do que faz na bancada, organizados em grupos conforme a função.</p>
+                <ul>
+                    <li><strong>Itens 1 a 4:</strong> Controle e comunicação.</li>
+                    <li><strong>Itens 5 a 12:</strong> Alimentação, proteção e segurança elétrica.</li>
+                    <li><strong>Itens 13 a 17:</strong> Atuadores e movimento.</li>
+                    <li><strong>Itens 18 a 21:</strong> Vácuo.</li>
+                    <li><strong>Itens 22 a 26:</strong> Comando e tratamento do ar.</li>
+                    <li><strong>Itens 27 e 28:</strong> Esteira e detecção de posição.</li>
+                    <li><strong>Itens 29 a 35:</strong> Botoeiras e sinalização.</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <h2>Controle e Comunicação</h2>
+            <section class="section_diferente">
+                <p class="frase_espacamento">O CLP, a tela de operação e os equipamentos que ligam a bancada em rede.</p>
+                <section class="section_diferente_02">
+                    <h4>1. CLP</h4>
+                    <p class="frase_espacamento_dois"><strong>Siemens SIMATIC S7-1200 CPU 1215C DC/DC/DC (modelo 6ES7215-1AG40-0XB0)</strong></p>
+                    <p>É o cérebro da bancada: executa o programa, lê as entradas (sensores e botões) e aciona as saídas (válvulas, motores e sinaleiros). A sigla DC/DC/DC indica alimentação, entradas e saídas em corrente contínua (24 Vcc).</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>2. Interface Homem-Máquina (IHM)</h4>
+                    <p class="frase_espacamento_dois"><strong>Siemens SIMATIC KTP700 Basic Touch 7" (modelo 6AV2123-2GB03-0AX0)</strong></p>
+                    <p>Tela sensível ao toque de 7 polegadas, por onde o operador acompanha o processo e envia comandos ao CLP. Veja mais na página <a href="./ihm.html">Interface Homem-Máquina</a>.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>3. Switch Industrial Ethernet</h4>
+                    <p class="frase_espacamento_dois"><strong>Siemens SCALANCE X005 de 5 portas (modelo 6GK5005-0BA00-1BA2)</strong></p>
+                    <p>Interliga em rede o CLP, a IHM e os demais equipamentos com porta Ethernet, permitindo que eles troquem dados entre si.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>4. Ponto de Acesso / Repetidor Wi-Fi</h4>
+                    <p class="frase_espacamento_dois"><strong>Intelbras IWE 3000</strong></p>
+                    <p>Leva a conexão sem fio até a bancada e ajuda na integração com a rede da fábrica e a nuvem, nos níveis mais altos da <a href="./piramide_automacao.html">Pirâmide de Automação</a>.</p>
+                </section>
+            </section>
+        </section>
+
+        <section>
+            <h2>Alimentação, Proteção e Segurança Elétrica</h2>
+            <section class="section_diferente">
+                <p class="frase_espacamento">Os componentes que alimentam o comando e protegem pessoas e equipamentos. Veja também a página <a href="./paineis_eletricos.html">Painéis Elétricos</a>.</p>
+                <section class="section_diferente_02">
+                    <h4>5. Fonte de Alimentação Chaveada 24 Vcc 10 A</h4>
+                    <p class="frase_espacamento_dois"><strong>Siemens SITOP PSU100L (modelo 6EP1334-1LB00)</strong></p>
+                    <p>Converte a tensão da rede em 24 Vcc, a tensão usada pelo comando, e fornece até 10 A para os dispositivos da bancada.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>6. Relé de Segurança</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric XPSBAC14AP</strong></p>
+                    <p>Monitora o circuito de emergência e, quando a segurança é acionada, interrompe o acionamento de forma segura. É mais confiável que um relé comum para essa função.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>7. Contator Tripolar</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric TeSys LC1D09BD</strong></p>
+                    <p>Chave eletromagnética de três polos e 9 A, comandada por uma bobina de 24 Vcc. Permite ligar e desligar uma carga de potência a partir de um sinal de comando.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>8. Bloco de Contatos Auxiliares</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric TeSys LADN22</strong></p>
+                    <p>Acessório encaixado no contator que oferece contatos extras (dois normalmente abertos e dois normalmente fechados), usados em sinalização e intertravamentos.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>9. Disjuntor Termomagnético Bipolar 10 A</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric Easy9 (modelo EZ9F33210)</strong></p>
+                    <p>Protege o circuito contra curto-circuito e sobrecarga, desligando automaticamente quando a corrente passa do limite.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>10. Interruptor Diferencial Residual (DR) Bipolar 25 A 30 mA</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric Acti9 (modelo A9R74225)</strong></p>
+                    <p>Protege as pessoas contra choque elétrico: desliga o circuito quando detecta uma fuga de corrente a partir de 30 mA.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>11. Chave Seccionadora Geral 12 A</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric Vario VCF02</strong></p>
+                    <p>Chave geral que liga e desliga toda a alimentação elétrica da bancada. Fica no painel de conexões.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>12. Multimedidor de Energia</h4>
+                    <p class="frase_espacamento_dois"><strong>Smart Sense</strong></p>
+                    <p>Mede grandezas elétricas da bancada, como o consumo de energia, permitindo acompanhar a eficiência do sistema.</p>
+                </section>
+            </section>
+        </section>
+
+        <section>
+            <h2>Atuadores e Movimento</h2>
+            <section class="section_diferente">
+                <p class="frase_espacamento">Os atuadores que movimentam o manipulador e as peças. O conjunto elétrico faz o deslocamento horizontal (eixos X e Y) e o pneumático faz o movimento vertical (eixo Z).</p>
+                <section class="section_diferente_02">
+                    <h4>13. Driver de Atuador Elétrico</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC JXCP18-BC</strong></p>
+                    <p>Controlador do atuador elétrico: recebe os comandos do CLP e controla a posição e a velocidade do movimento.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>14. Atuador Elétrico Linear (Eixo X)</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC LEFS16RB-400</strong></p>
+                    <p>Atuador linear de fuso, tamanho 16 e curso de 400 mm. Responsável pelo movimento do manipulador no eixo X.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>15. Atuador Elétrico Linear com Guia (Eixo Y)</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC LEYG16MB-150</strong></p>
+                    <p>Atuador linear tamanho 16 e curso de 150 mm, com guia integrada que dá mais rigidez ao movimento. Responsável pelo eixo Y.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>16. Atuador Pneumático Básico (Eixo Z)</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC CD85N12-100-B</strong></p>
+                    <p>Cilindro pneumático de 12 mm de diâmetro e 100 mm de curso, que faz a subida e a descida do manipulador. Suas posições são lidas pelos sensores Reed Switch.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>17. Cilindros Pneumáticos do Stopper da Esteira</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC Série CJ1</strong></p>
+                    <p>Cilindros pneumáticos compactos que funcionam como batente na esteira: avançam para segurar a peça em uma posição e recuam para liberá-la.</p>
+                </section>
+            </section>
+        </section>
+
+        <section>
+            <h2>Vácuo</h2>
+            <section class="section_diferente">
+                <p class="frase_espacamento">O conjunto que permite ao manipulador pegar a lâmina por sucção e à mesa de gravação segurá-la.</p>
+                <section class="section_diferente_02">
+                    <h4>18. Vacuostatos Digitais (Manipulador e Mesa de Gravação)</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC ZSE10F-M5-E-GRK</strong></p>
+                    <p>Medem o vácuo e avisam o CLP quando o nível necessário foi atingido, confirmando a pega da lâmina. Um fica no manipulador (%I0.4) e outro na mesa de gravação (%I0.5).</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>19. Geradores de Vácuo (Ejetores)</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC ZU07S</strong></p>
+                    <p>Geram vácuo a partir do ar comprimido, pelo efeito Venturi, sem precisar de uma bomba de vácuo.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>20. Ventosa de Sucção da Mesa de Gravação</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC ZPT10BN-A5</strong></p>
+                    <p>Ventosa que prende a lâmina na mesa durante a gravação.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>21. Ventosa de Sucção do Manipulador</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC ZPT (25 mm)</strong></p>
+                    <p>Ventosa de 25 mm de diâmetro que pega e transporta a lâmina.</p>
+                </section>
+            </section>
+        </section>
+
+        <section>
+            <h2>Comando e Tratamento do Ar</h2>
+            <section class="section_diferente">
+                <p class="frase_espacamento">As válvulas e o filtro que preparam e direcionam o ar comprimido. Veja também a página <a href="./fundamentos_pneumatica.html">Pneumática</a>.</p>
+                <section class="section_diferente_02">
+                    <h4>22. Válvula Solenoide Direcional</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC SY5120-5DZ-01</strong></p>
+                    <p>Válvula direcional de 5 vias, da série SY5000. O CLP energiza o solenoide para direcionar o ar até os cilindros.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>23. Válvula Solenoide de Segurança</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC VP544-5DZ1-03-X538</strong></p>
+                    <p>Válvula solenoide da série VP500 com função de segurança: controla a passagem do ar principal e permite cortá-lo quando a segurança é acionada.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>24. Válvula de Bloqueio Manual</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC VHS20-02B</strong></p>
+                    <p>Válvula operada à mão que corta ou libera o ar de alimentação da bancada. Normalmente também libera a pressão residual do circuito.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>25. Válvula Direcional Manual</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC VHK2-06F-06FL</strong></p>
+                    <p>Válvula de acionamento manual, de pequeno porte, que permite comandar o ar sem depender do CLP.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>26. Filtro Regulador de Ar Comprimido</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC AW20-F01BCE-B</strong></p>
+                    <p>Retira impurezas e umidade do ar e ajusta a pressão de trabalho. É o primeiro tratamento do ar que entra na bancada.</p>
+                </section>
+            </section>
+        </section>
+
+        <section>
+            <h2>Esteira e Detecção de Posição</h2>
+            <section class="section_diferente">
+                <p class="frase_espacamento">O transporte das peças e o sensor que informa a posição dos cilindros.</p>
+                <section class="section_diferente_02">
+                    <h4>27. Motores DC da Esteira</h4>
+                    <p class="frase_espacamento_dois"><strong>Motorredutor 33 RPM 24 V (modelos 100401524 / MR101-B035-PW)</strong></p>
+                    <p>Motores de corrente contínua com redutor: o redutor diminui a rotação e aumenta o torque, movendo as esteiras de transporte.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>28. Sensores Magnéticos de Posição (Reed Switch)</h4>
+                    <p class="frase_espacamento_dois"><strong>SMC D-A93L</strong></p>
+                    <p>Detectam o ímã do êmbolo do cilindro e informam ao CLP a posição avançada ou recuada. No Eixo Z entram nos endereços %I0.2 e %I0.3. Veja a página <a href="./sensor_reedSwitch.html">Sensor Reed Switch</a>.</p>
+                </section>
+            </section>
+        </section>
+
+        <section>
+            <h2>Botoeiras e Sinalização</h2>
+            <section class="section_diferente">
+                <p class="frase_espacamento">Os comandos do operador e as luzes que indicam o estado da segurança. Veja também a página <a href="./clp.html">Controlador Lógico Programável</a> para os endereços de entrada.</p>
+                <section class="section_diferente_02">
+                    <h4>29. Botão de Emergência</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric Harmony XB5AS8444</strong></p>
+                    <p>Botão de emergência tipo cogumelo, com trava, que interrompe o funcionamento em situação de risco. Entra no CLP em %I0.1.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>30. Botão de Reset Iluminado</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric ZB5AW363 / ZB5AW0B61</strong></p>
+                    <p>Botão iluminado usado para rearmar o circuito de segurança depois que a emergência é desfeita.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>31. Botão de Impulsão Start (Verde)</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric Easy Harmony XA2EA31</strong></p>
+                    <p>Inicia o ciclo de automação. Entra no CLP em %I0.7.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>32. Botão de Impulsão Stop (Vermelho)</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric Easy Harmony XA2EA42</strong></p>
+                    <p>Para o ciclo de automação. Entra no CLP em %I1.0.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>33. Chave Comutadora 2 Posições Fixas</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric Easy Harmony XA2ED21</strong></p>
+                    <p>Chave seletora que fica em uma de duas posições, permitindo escolher entre duas condições de operação definidas pelo programa. Entra no CLP em %I0.6.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>34. Sinaleiro LED Verde (Segurança OK)</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric Easy Harmony XA2EVB3LC</strong></p>
+                    <p>Luz verde que indica que o circuito de segurança está normal.</p>
+                </section>
+                <section class="section_diferente_02">
+                    <h4>35. Sinaleiro LED Vermelho (Segurança Acionada)</h4>
+                    <p class="frase_espacamento_dois"><strong>Schneider Electric Easy Harmony XA2EVB4LC</strong></p>
+                    <p>Luz vermelha que indica que a segurança foi acionada.</p>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>by Arthur Furtado Machado, Felipe Roberto Cardoso e Gabriel Mafra Alves de Gois &trade; &copy;</p>
+    </footer>
+
+</body>
+
+</html>
