@@ -88,6 +88,11 @@ nav {
     transform: scale(0.95);
 }
 
+.centralizar_fonte{
+    display: block;
+    text-align: center;
+}
+
 /* O <main> vira um container transparente que centraliza o conteúdo */
 main {
     max-width: 1100px;
