@@ -338,6 +338,7 @@ video {
     height: auto;
     border-radius: 8px;
     display: block;
+    text-align: center;
     margin-top: 15px;
     border: #004A8D 3px solid;
     margin-bottom: 30px;
@@ -357,6 +358,7 @@ video {
     height: auto;
     border-radius: 8px;
     display: block;
+    text-align: center;
     margin-top: 15px;
     border: #004A8D 3px solid;
     margin-bottom: 15px;
