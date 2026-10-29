@@ -182,40 +182,33 @@
             <!-- NOVA: IHM NA BANCADA -->
             <section class="section_diferente">
                 <h2 class="h2_diferente">A IHM na Bancada Processo</h2>
-                <p class="frase_espacamento_dois">A Bancada de Processos SMART 4.0 (SENAI+digital) reúne, no painel frontal, a tela de operação e as botoeiras físicas: emergência, Start, Stop e comutador de 2 posições. Todo o controle da bancada fica a cargo de um CLP Siemens S7-1200, instalado no painel elétrico ao lado de um switch Ethernet de 5 portas. A bancada ainda conta com uma porta Ethernet RJ-45 no painel de conexões.</p>
-                <p class="frase_espacamento">Os comandos das botoeiras chegam ao CLP como entradas digitais:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Descrição</th>
-                            <th>Canal do CLP</th>
-                            <th>Endereço no Software</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="td_negrito">Emergência</td>
-                            <td class="td_centro">Ia1</td>
-                            <td class="td_centro">%I0.1</td>
-                        </tr>
-                        <tr>
-                            <td class="td_negrito">Comutador 2 Posições</td>
-                            <td class="td_centro">Ia6</td>
-                            <td class="td_centro">%I0.6</td>
-                        </tr>
-                        <tr>
-                            <td class="td_negrito">Botão Start</td>
-                            <td class="td_centro">Ia7</td>
-                            <td class="td_centro">%I0.7</td>
-                        </tr>
-                        <tr>
-                            <td class="td_negrito">Botão Stop</td>
-                            <td class="td_centro">Ib0</td>
-                            <td class="td_centro">%I1.0</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p style="margin-top: 15px;">Assim como no exemplo do reservatório, quem executa a lógica é o CLP: o operador aciona Start ou Stop e o controlador só movimenta os atuadores se as condições do processo e de segurança forem atendidas. O painel elétrico da bancada também possui relé de segurança e disjuntores de proteção.</p>
+                <p class="frase_espacamento">Na Bancada de Processos SMART 4.0, a IHM é uma Siemens SIMATIC KTP700 Basic Touch de 7 polegadas (modelo 6AV2123-2GB03-0AX0), instalada no painel frontal ao lado das botoeiras físicas. O programa da IHM se chama "Estação de Processo" e mostra, em todas as telas, o logotipo Smart 4.0, a data e a hora. O operador navega por quatro telas:</p>
+
+                <section class="section_diferente_02">
+                    <h4>Tela Inicial</h4>
+                    <p class="frase_espacamento_dois">É a tela de entrada, com três ícones grandes: <strong>Diagnóstico</strong>, <strong>Configurações</strong> e <strong>Manual</strong>. Cada um leva à tela correspondente.</p>
+                    <img class="imagem_tres" src="../img/Tela_IHM_inicial.jpg" alt="Tela inicial da IHM da bancada">
+                </section>
+
+                <section class="section_diferente_02">
+                    <h4>Tela de Diagnóstico</h4>
+                    <p class="frase_espacamento_dois">Mostra o estado dos sinais da bancada em duas colunas. Em <strong>Entradas</strong> aparecem o botão de emergência, o Eixo Z avançado e recuado, os sensores de vácuo do manipulador e da mesa, o comutador do painel (AUT) e os botões verde e vermelho. Em <strong>Saídas</strong> aparecem o avanço do Eixo Z, o vácuo do manipulador e da mesa, os motores das esteiras 1 e 2 e o status do processo. Cada item tem um indicador que muda de cor conforme o sinal.</p>
+                    <img class="imagem_tres" src="../img/Tela_IHM_diagnosticos.jpg" alt="Tela de diagnóstico da IHM da bancada">
+                </section>
+
+                <section class="section_diferente_02">
+                    <h4>Tela de Configurações</h4>
+                    <p class="frase_espacamento_dois">Reúne as <strong>posições dos eixos X e Y</strong>, em milímetros, de cada ponto de trabalho: lâminas 1 a 6, mesa, caneta no meio da mesa e depósitos 1 a 3. Há botões para calcular as posições a partir da lâmina 6 e da mesa e para salvar. Também tem o controle por JOG (menos e mais) de cada eixo, com a posição atual, e os botões Vácuo Manipulador, Vácuo Mesa e Avança Eixo Z. As funções só são permitidas se o comutador estiver na posição Manual.</p>
+                    <img class="imagem_tres" src="../img/Tela_IHM_configuracao.jpg" alt="Tela de configurações da IHM da bancada">
+                </section>
+
+                <section class="section_diferente_02">
+                    <h4>Tela Manual</h4>
+                    <p class="frase_espacamento_dois">Permite comandar a bancada manualmente. À esquerda ficam as <strong>saídas digitais</strong>: Avança Eixo Z, Vácuo Manipulador, Vácuo Mesa, Motor Esteira 1, Motor Esteira 2 e Status Processo. À direita ficam os controles dos atuadores elétricos, o <strong>Elétrico Horizontal (Eixo X)</strong> e o <strong>Elétrico Transversal (Eixo Y)</strong>, cada um com a posição atual, JOG menos e mais e os botões Home, Reset e Servo. Também só funciona com o comutador na posição Manual.</p>
+                    <img class="imagem_tres" src="../img/Tela_IHM_manual.jpg" alt="Tela manual da IHM da bancada">
+                </section>
+
+                <p style="margin-top: 15px;">Assim como no exemplo do reservatório, quem executa a lógica é o CLP: a IHM envia os comandos e o controlador só movimenta os atuadores se as condições do processo e de segurança forem atendidas. Na <a href="./piramide_automacao.html">Pirâmide de Automação</a>, a IHM está no Nível 3 (Supervisão).</p>
             </section>
 
             <!-- 11 -->
